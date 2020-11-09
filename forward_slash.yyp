@@ -1,6 +1,24 @@
 {
   "resources": [
-    {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},"order":0,},
+    {"id":{"name":"spr_ul","path":"sprites/spr_ul/spr_ul.yy",},"order":6,},
+    {"id":{"name":"o_swing","path":"objects/o_swing/o_swing.yy",},"order":2,},
+    {"id":{"name":"spr_dl","path":"sprites/spr_dl/spr_dl.yy",},"order":1,},
+    {"id":{"name":"o_player","path":"objects/o_player/o_player.yy",},"order":0,},
+    {"id":{"name":"font_default","path":"fonts/font_default/font_default.yy",},"order":0,},
+    {"id":{"name":"o_enemy","path":"objects/o_enemy/o_enemy.yy",},"order":3,},
+    {"id":{"name":"toro_1","path":"sprites/toro_1/toro_1.yy",},"order":9,},
+    {"id":{"name":"SpawnRoom","path":"sprites/SpawnRoom/SpawnRoom.yy",},"order":0,},
+    {"id":{"name":"o_game","path":"objects/o_game/o_game.yy",},"order":1,},
+    {"id":{"name":"spr_d","path":"sprites/spr_d/spr_d.yy",},"order":0,},
+    {"id":{"name":"s_swing","path":"sprites/s_swing/s_swing.yy",},"order":8,},
+    {"id":{"name":"spr_ur","path":"sprites/spr_ur/spr_ur.yy",},"order":7,},
+    {"id":{"name":"spr_u","path":"sprites/spr_u/spr_u.yy",},"order":5,},
+    {"id":{"name":"spr_l","path":"sprites/spr_l/spr_l.yy",},"order":3,},
+    {"id":{"name":"o_hudswing","path":"objects/o_hudswing/o_hudswing.yy",},"order":4,},
+    {"id":{"name":"spr_testsprite","path":"sprites/spr_testsprite/spr_testsprite.yy",},"order":1,},
+    {"id":{"name":"spr_r","path":"sprites/spr_r/spr_r.yy",},"order":4,},
+    {"id":{"name":"spr_dr","path":"sprites/spr_dr/spr_dr.yy",},"order":2,},
+    {"id":{"name":"level_1","path":"rooms/level_1/level_1.yy",},"order":0,},
   ],
   "Options": [
     {"name":"Main","path":"options/main/options_main.yy",},
@@ -14,7 +32,7 @@
     "children": [],
   },
   "RoomOrder": [
-    {"name":"Room1","path":"rooms/Room1/Room1.yy",},
+    {"name":"level_1","path":"rooms/level_1/level_1.yy",},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":1,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},
@@ -31,6 +49,7 @@
     {"folderPath":"folders/Animation Curves.yy","order":12,"resourceVersion":"1.0","name":"Animation Curves","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Notes.yy","order":13,"resourceVersion":"1.0","name":"Notes","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Extensions.yy","order":14,"resourceVersion":"1.0","name":"Extensions","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Sprites/test_sprite.yy","order":10,"resourceVersion":"1.0","name":"test_sprite","tags":[],"resourceType":"GMFolder",},
   ],
   "AudioGroups": [
     {"targets":461609314234257646,"resourceVersion":"1.0","name":"audiogroup_default","resourceType":"GMAudioGroup",},
