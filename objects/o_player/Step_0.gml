@@ -4,13 +4,20 @@
 h_input = keyboard_check(vk_right) - keyboard_check(vk_left);
 v_input = keyboard_check(vk_down) - keyboard_check(vk_up);
 
+if (current_dash_cooldown > 0) {
+	current_dash_cooldown -= 1;	
+}
 
+if (current_attack_cooldown > 0) {
+	current_attack_cooldown -= 1;	
+}
 
-if (keyboard_check_pressed(vk_shift)) {
+if (keyboard_check_pressed(vk_control) and current_dash_cooldown <= 0) {
 	is_dashing = true;
 	dash_angle = dir;
-	spd = normal_spd * 5;
-	alarm[0] = 5;
+	spd = normal_spd * dash_distance;
+	alarm[0] = dash_duration; // duration of dash
+	current_dash_cooldown = dash_cooldown;
 }
 
 if (is_dashing) {

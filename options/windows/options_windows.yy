@@ -1,6 +1,6 @@
 {
-  "option_windows_display_name": "Foreward Slash - Made by Colby Tang",
-  "option_windows_executable_name": "Foreward Slash.exe",
+  "option_windows_display_name": "Fore-ward Slash - Made by Colby Tang",
+  "option_windows_executable_name": "Fore-ward Slash.exe",
   "option_windows_version": "1.0.0.0",
   "option_windows_company_info": "Colby Tang",
   "option_windows_product_info": "Created with GameMaker Studio 2",

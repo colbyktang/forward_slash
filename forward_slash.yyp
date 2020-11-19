@@ -1,17 +1,25 @@
 {
   "resources": [
+    {"id":{"name":"snd_button_click","path":"sounds/snd_button_click/snd_button_click.yy",},"order":0,},
     {"id":{"name":"spr_ul","path":"sprites/spr_ul/spr_ul.yy",},"order":6,},
+    {"id":{"name":"o_exit_menu_button","path":"objects/o_exit_menu_button/o_exit_menu_button.yy",},"order":7,},
     {"id":{"name":"o_swing","path":"objects/o_swing/o_swing.yy",},"order":2,},
     {"id":{"name":"spr_dl","path":"sprites/spr_dl/spr_dl.yy",},"order":1,},
+    {"id":{"name":"foreward_slash","path":"sprites/foreward_slash/foreward_slash.yy",},"order":12,},
+    {"id":{"name":"o_logo","path":"objects/o_logo/o_logo.yy",},"order":6,},
     {"id":{"name":"o_player","path":"objects/o_player/o_player.yy",},"order":0,},
+    {"id":{"name":"o_start_menu_button","path":"objects/o_start_menu_button/o_start_menu_button.yy",},"order":5,},
     {"id":{"name":"font_default","path":"fonts/font_default/font_default.yy",},"order":0,},
     {"id":{"name":"o_enemy","path":"objects/o_enemy/o_enemy.yy",},"order":3,},
+    {"id":{"name":"s_button","path":"sprites/s_button/s_button.yy",},"order":11,},
     {"id":{"name":"toro_1","path":"sprites/toro_1/toro_1.yy",},"order":9,},
     {"id":{"name":"SpawnRoom","path":"sprites/SpawnRoom/SpawnRoom.yy",},"order":0,},
     {"id":{"name":"o_game","path":"objects/o_game/o_game.yy",},"order":1,},
+    {"id":{"name":"menu","path":"rooms/menu/menu.yy",},"order":1,},
     {"id":{"name":"spr_d","path":"sprites/spr_d/spr_d.yy",},"order":0,},
     {"id":{"name":"s_swing","path":"sprites/s_swing/s_swing.yy",},"order":8,},
     {"id":{"name":"spr_ur","path":"sprites/spr_ur/spr_ur.yy",},"order":7,},
+    {"id":{"name":"font_menu","path":"fonts/font_menu/font_menu.yy",},"order":1,},
     {"id":{"name":"spr_u","path":"sprites/spr_u/spr_u.yy",},"order":5,},
     {"id":{"name":"spr_l","path":"sprites/spr_l/spr_l.yy",},"order":3,},
     {"id":{"name":"o_hudswing","path":"objects/o_hudswing/o_hudswing.yy",},"order":4,},
@@ -32,6 +40,7 @@
     "children": [],
   },
   "RoomOrder": [
+    {"name":"menu","path":"rooms/menu/menu.yy",},
     {"name":"level_1","path":"rooms/level_1/level_1.yy",},
   ],
   "Folders": [
