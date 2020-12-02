@@ -1,23 +1,19 @@
 {
-  "name": "SpawnRoom",
-  "HTile": false,
-  "VTile": false,
-  "For3D": false,
+  "bboxMode": 0,
+  "collisionKind": 1,
+  "type": 0,
+  "origin": 0,
   "preMultiplyAlpha": false,
   "edgeFiltering": false,
   "collisionTolerance": 0,
+  "swfPrecision": 2.525,
   "bbox_left": 0,
   "bbox_right": 2047,
   "bbox_top": 0,
   "bbox_bottom": 2047,
-  "origin": 0,
-  "layers": [
-    {"displayName":"default","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"resourceVersion":"1.0","name":"8cc1d2b6-b63a-459c-8991-93b3f28a9b33","tags":[],"resourceType":"GMImageLayer",},
-  ],
-  "bboxMode": 0,
-  "collisionKind": 1,
-  "type": 0,
-  "swfPrecision": 2.525,
+  "HTile": false,
+  "VTile": false,
+  "For3D": false,
   "width": 2048,
   "height": 2048,
   "textureGroupId": {
@@ -33,12 +29,6 @@
       ],"parent":{"name":"SpawnRoom","path":"sprites/SpawnRoom/SpawnRoom.yy",},"resourceVersion":"1.0","name":"6c5a84d5-bdc9-4c30-b2e1-b10e0e8d909f","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"d716a273-9bc7-4fff-8942-3b33db9a7d70","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"6c5a84d5-bdc9-4c30-b2e1-b10e0e8d909f","path":"sprites/SpawnRoom/SpawnRoom.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
-    ],
-    "name": "SpawnRoom",
     "spriteId": {"name":"SpawnRoom","path":"sprites/SpawnRoom/SpawnRoom.yy",},
     "timeUnits": 1,
     "playback": 1,
@@ -49,6 +39,11 @@
     "length": 1.0,
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
+    "tracks": [
+      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"d716a273-9bc7-4fff-8942-3b33db9a7d70","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"6c5a84d5-bdc9-4c30-b2e1-b10e0e8d909f","path":"sprites/SpawnRoom/SpawnRoom.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
+    ],
     "visibleRange": null,
     "lockOrigin": false,
     "showBackdrop": true,
@@ -65,14 +60,19 @@
     "eventStubScript": null,
     "parent": {"name":"SpawnRoom","path":"sprites/SpawnRoom/SpawnRoom.yy",},
     "resourceVersion": "1.3",
+    "name": "SpawnRoom",
     "tags": [],
     "resourceType": "GMSequence",
   },
+  "layers": [
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"8cc1d2b6-b63a-459c-8991-93b3f28a9b33","tags":[],"resourceType":"GMImageLayer",},
+  ],
   "parent": {
     "name": "Sprites",
     "path": "folders/Sprites.yy",
   },
   "resourceVersion": "1.0",
+  "name": "SpawnRoom",
   "tags": [],
   "resourceType": "GMSprite",
 }
