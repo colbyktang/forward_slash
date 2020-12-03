@@ -56,14 +56,16 @@ if (bomb_hold_input and num_of_bombs > 0) {
 		pre_bomb_hold_duration++;	
 	}
 	else {
-		flash_alpha = 1;
+		var bomb_progress = bomb_hold_duration/bomb_activate_duration;
+		flash_alpha = min(bomb_progress, 0.8);
 		flash_color = c_blue;	
 		if (bomb_hold_duration >= bomb_activate_duration) {
+			flash_color = c_aqua;
 			bomb_activated = true;
 		}
 		else {
 			bomb_hold_duration += 1;
-			audio_sound_pitch(snd_square, bomb_hold_duration/bomb_activate_duration);
+			audio_sound_pitch(snd_square, bomb_progress);
 			audio_play_sound(snd_square, 50, false);
 		}
 	}
