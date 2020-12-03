@@ -4,7 +4,7 @@ collision_map = layer_tilemap_get_id (layer_get_id("Col"));
 
 // Movement
 input_magnitude = 0;
-normal_spd = 1;
+normal_spd = 3;
 spd = normal_spd;
 h_speed = 0;
 v_speed = 0;

@@ -28,6 +28,14 @@ attack_cooldown = 25;
 current_attack_cooldown = 0;
 swing_distance = 1;
 num_of_bombs = 0;
+num_of_bombs_limit = 1;
+
+pre_bomb_hold_duration = 0;
+pre_bomb_activate_duration = 20;
+
+bomb_hold_duration = 0;
+bomb_activate_duration = 40;
+bomb_activated = false;
 
 // Animation
 image_speed = 0.4;
@@ -44,5 +52,5 @@ dash_timer = walk_time;
 // Progress Bar
 bar_width = 100;
 bar_height = 12;
-bar_x = x - (sprite_width * 0.4);
-bar_y = y - (sprite_height * 0.7);
+bar_x = x;
+bar_y = y;

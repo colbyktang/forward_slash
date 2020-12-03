@@ -9,10 +9,6 @@ draw_text(0,48, "Toros Deleted: " + string(global.kills));
 if (instance_exists(o_player)) {
 	draw_text(0,64, "Player Health: " + string(o_player.hp));
 }
-if (instance_exists(o_player)) {
-	draw_text(0,72, "Player Bombs: " + string(o_player.num_of_bombs));
-}
-
 
 if (global.isGameOver) {
 	draw_set_halign(fa_center);

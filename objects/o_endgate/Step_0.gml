@@ -25,5 +25,10 @@ else {
 if (warp_progress >= warp_goal) {
 	audio_sound_pitch(snd_warp, 1.5);
 	audio_play_sound(snd_warp, 50, false);
-	room_goto_next();
+	if (room != room_last) {
+		room_goto_next();
+	}
+	else {
+		room_goto(menu);	
+	}
 }

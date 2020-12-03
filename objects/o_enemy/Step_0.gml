@@ -18,7 +18,7 @@ else {
 	image_xscale = 1;	
 }
 
-if (distance_to_player < 150 and distance_to_player > 20) {
+if (distance_to_player < 250 and distance_to_player > 20) {
 	input_magnitude = 1;
 }
 else {

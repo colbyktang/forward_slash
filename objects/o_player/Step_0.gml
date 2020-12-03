@@ -4,6 +4,8 @@
 global.h_input = (keyboard_check(vk_right) or keyboard_check(ord("D"))) - (keyboard_check(vk_left) or keyboard_check(ord("A")));
 global.v_input = (keyboard_check(vk_down) or keyboard_check(ord("S"))) - (keyboard_check(vk_up) or keyboard_check(ord("W")));
 attack_input = keyboard_check_pressed(vk_space);
+bomb_hold_input = keyboard_check(vk_space);
+bomb_release_input = keyboard_check_released(vk_space);
 dash_input = keyboard_check_pressed(vk_control);
 dash_timer--;
 
@@ -47,6 +49,36 @@ if (attack_input and current_attack_cooldown <= 0) {
 	var inst = instance_create_layer(x + lengthdir_x(swing_distance, input_direction), y + lengthdir_y(swing_distance, input_direction), "Instances", o_swing);
 	inst.image_angle = input_direction;
 	current_attack_cooldown = attack_cooldown;
+}
+
+if (bomb_hold_input and num_of_bombs > 0) {
+	if (pre_bomb_hold_duration <= pre_bomb_activate_duration) {
+		pre_bomb_hold_duration++;	
+	}
+	else {
+		flash_alpha = 1;
+		flash_color = c_blue;	
+		if (bomb_hold_duration >= bomb_activate_duration) {
+			bomb_activated = true;
+		}
+		else {
+			bomb_hold_duration += 1;
+			audio_sound_pitch(snd_square, bomb_hold_duration/bomb_activate_duration);
+			audio_play_sound(snd_square, 50, false);
+		}
+	}
+}
+
+if (bomb_release_input) {
+	if (bomb_activated) {
+		audio_sound_pitch(snd_bomb_explosion, 2);
+		audio_play_sound(snd_bomb_explosion, 50, false);
+		instance_create_layer(x,y, "Instances", o_bomb_wave);
+		bomb_activated = false;
+		num_of_bombs--;
+	}
+	pre_bomb_hold_duration = 0;
+	bomb_hold_duration = 0;	
 }
 
 if (input_magnitude != 0) {
