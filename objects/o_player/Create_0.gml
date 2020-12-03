@@ -52,5 +52,3 @@ dash_timer = walk_time;
 // Progress Bar
 bar_width = 100;
 bar_height = 12;
-bar_x = x;
-bar_y = y;
