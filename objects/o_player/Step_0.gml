@@ -1,11 +1,11 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-global.h_input = keyboard_check(vk_right) - keyboard_check(vk_left);
-global.v_input = keyboard_check(vk_down) - keyboard_check(vk_up);
+global.h_input = (keyboard_check(vk_right) or keyboard_check(ord("D"))) - (keyboard_check(vk_left) or keyboard_check(ord("A")));
+global.v_input = (keyboard_check(vk_down) or keyboard_check(ord("S"))) - (keyboard_check(vk_up) or keyboard_check(ord("W")));
 attack_input = keyboard_check_pressed(vk_space);
 dash_input = keyboard_check_pressed(vk_control);
-dash_timer --;
+dash_timer--;
 
 input_magnitude = global.h_input != 0 || global.v_input != 0;
 if (input_magnitude > 0) {
@@ -15,7 +15,6 @@ if (input_magnitude > 0) {
 if (!is_dashing) {
 	h_speed = lengthdir_x(input_magnitude * spd, input_direction);
 	v_speed = lengthdir_y(input_magnitude * spd, input_direction);
-	
 }
 
 if (dash_timer <= 0) {
@@ -49,27 +48,6 @@ if (attack_input and current_attack_cooldown <= 0) {
 	inst.image_angle = input_direction;
 	current_attack_cooldown = attack_cooldown;
 }
-
-/*
-if (h_input != 0 or v_input != 0) {
-	dir = point_direction (0,0, h_input, v_input);
-	
-	// Set Sprite
-	switch (dir) {
-		case 0: sprite_index = spr_r; break;
-		case 45: sprite_index = spr_ur; break;
-		case 90: sprite_index = spr_u; break;
-		case 135: sprite_index = spr_ul; break;
-		case 180: sprite_index = spr_l; break;
-		case 225: sprite_index = spr_dl; break;
-		case 270: sprite_index = spr_d; break;
-		case 315: sprite_index = spr_dr; break;
-	}
-} 
-else {
-	image_index = 0;	
-}
-*/
 
 if (input_magnitude != 0) {
 	if (input_direction > 90 and input_direction < 270) {

@@ -18,8 +18,8 @@ else if (keyboard_up) {
 	show_debug_message(string(menu_selection));
 }
 
-arrow_select.x = menu_buttons[menu_selection].x - (menu_buttons[menu_selection].sprite_width / 2);
-arrow_select.y = menu_buttons[menu_selection].y + y_padding;
+arrow_select.x = menu_buttons[menu_selection].x - (menu_buttons[menu_selection].sprite_width / 2) - x_padding;
+arrow_select.y = menu_buttons[menu_selection].y;
 
 if (keyboard_check_pressed(vk_enter)) {
 	audio_play_sound(snd_button_click, 100, false);

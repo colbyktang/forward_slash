@@ -4,7 +4,8 @@
 collision_map = layer_tilemap_get_id (layer_get_id("Col"));
 
 // Properties
-hp = 100;
+hp_max = 100;
+hp = hp_max;
 
 // Movement
 normal_spd = 4;
@@ -16,7 +17,7 @@ is_colliding = false;
 
 // Dash
 dash_duration = 4;
-dash_distance = 4;
+dash_distance = 6;
 is_dashing = false;
 dash_angle = 0;
 dash_cooldown = 35;
@@ -26,6 +27,7 @@ current_dash_cooldown = 0;
 attack_cooldown = 25;
 current_attack_cooldown = 0;
 swing_distance = 1;
+num_of_bombs = 0;
 
 // Animation
 image_speed = 0.4;
@@ -38,3 +40,9 @@ flash_color = c_red;
 walk_time = 5;
 dash_time = 0;
 dash_timer = walk_time;
+
+// Progress Bar
+bar_width = 100;
+bar_height = 12;
+bar_x = x - (sprite_width * 0.4);
+bar_y = y - (sprite_height * 0.7);

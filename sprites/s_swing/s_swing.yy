@@ -68,8 +68,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"39de03a3-b9e2-4804-9bf5-9f3ea465cc75","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "test_sprite",
-    "path": "folders/Sprites/test_sprite.yy",
+    "name": "Sprites",
+    "path": "folders/Sprites.yy",
   },
   "resourceVersion": "1.0",
   "name": "s_swing",
