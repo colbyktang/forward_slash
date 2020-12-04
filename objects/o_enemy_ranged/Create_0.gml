@@ -15,7 +15,8 @@ image_speed = 1;
 damage = 10;
 damage_cooldown_limit = 30;
 damage_cooldown = damage_cooldown_limit;
-attack_cooldown = 20
+attack_cooldown = 20;
+attack_walking_cooldown = 50;
 attack_cooldown_timer = 0;
 
 move_x = 0;

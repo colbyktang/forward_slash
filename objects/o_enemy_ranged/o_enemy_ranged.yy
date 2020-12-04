@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "totoro_idle",
-    "path": "sprites/totoro_idle/totoro_idle.yy",
+    "name": "totoro2_idle",
+    "path": "sprites/totoro2_idle/totoro2_idle.yy",
   },
   "solid": false,
   "visible": true,

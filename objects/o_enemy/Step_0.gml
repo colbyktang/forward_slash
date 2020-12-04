@@ -1,8 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-
-
 if (instance_exists (o_player)) {
 	distance_to_player = point_distance(x, y, o_player.x, o_player.y);
 	direction = point_direction (x, y, o_player.x, o_player.y);
@@ -19,9 +17,11 @@ else {
 }
 
 if (distance_to_player < 250 and distance_to_player > 20) {
+	sprite_index = totoro_walk;
 	input_magnitude = 1;
 }
 else {
+	sprite_index = totoro_idle;
 	input_magnitude = 0;	
 }
 

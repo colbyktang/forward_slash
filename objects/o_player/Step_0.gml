@@ -95,6 +95,7 @@ if (input_magnitude != 0) {
 if (hp <= 0) {
 	instance_destroy(o_hudswing);
 	instance_destroy(self);
+	instance_create_layer(x,y, "Instances", o_player_body);
 	with (o_game) event_user(1);
 }
 

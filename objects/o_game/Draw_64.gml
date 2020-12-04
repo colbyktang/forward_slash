@@ -2,6 +2,7 @@
 // You can write your code in this editor
 
 draw_set_halign(fa_left);
+draw_set_font(font_default);
 draw_text(0,8, "Press R to Restart Game");
 draw_text(0,32, "Toros Deleted: " + string(global.kills));
 

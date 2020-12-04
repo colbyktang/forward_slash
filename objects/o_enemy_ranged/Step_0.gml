@@ -20,19 +20,27 @@ if (attack_cooldown_timer > 0) {
 	attack_cooldown_timer--;	
 }
 
-if (distance_to_player < 150) {
-	if (distance_to_player > 60) {
-		input_magnitude = 1;
-	}
+if (distance_to_player < 300) {
 	if (attack_cooldown_timer <= 0) {
-		attack_cooldown_timer = attack_cooldown;
+		if (distance_to_player < 130) {
+			attack_cooldown_timer = attack_walking_cooldown;
+		}
+		else {
+			attack_cooldown_timer = attack_cooldown;
+		}
 		audio_play_sound(snd_enemy_fire, 10, false);
 		var bullet = instance_create_layer(x + lengthdir_x(1, direction), y + lengthdir_y(1, direction), "Instances", o_bullet);
 		bullet.image_angle = direction;
 		bullet.direction = direction;
 	}
 }
+
+if (distance_to_player < 130) {
+	sprite_index = totoro2_walk;
+	input_magnitude = -1;
+}
 else {
+	sprite_index = totoro2_idle;
 	input_magnitude = 0;	
 }
 

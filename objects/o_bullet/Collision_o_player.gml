@@ -6,3 +6,4 @@ with (o_player) {
 	event_user(0); // Trigger hit event
 }
 instance_destroy(self);
+audio_play_sound(snd_sine, 50, false);
