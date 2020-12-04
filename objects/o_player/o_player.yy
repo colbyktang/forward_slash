@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_character",
-    "path": "sprites/spr_character/spr_character.yy",
+    "name": "spr_character_running",
+    "path": "sprites/spr_character_running/spr_character_running.yy",
   },
   "solid": false,
   "visible": true,

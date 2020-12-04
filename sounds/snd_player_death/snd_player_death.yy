@@ -1,6 +1,6 @@
 {
   "compression": 0,
-  "volume": 0.3,
+  "volume": 0.4,
   "preload": false,
   "bitRate": 128,
   "sampleRate": 44100,
@@ -10,14 +10,14 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "snd_bloop.wav",
-  "duration": 0.270193,
+  "soundFile": "snd_player_death.wav",
+  "duration": 0.991848,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",
   },
   "resourceVersion": "1.0",
-  "name": "snd_bloop",
+  "name": "snd_player_death",
   "tags": [],
   "resourceType": "GMSound",
 }

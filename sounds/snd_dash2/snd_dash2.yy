@@ -1,6 +1,6 @@
 {
   "compression": 0,
-  "volume": 1.0,
+  "volume": 0.1,
   "preload": false,
   "bitRate": 128,
   "sampleRate": 44100,
@@ -10,14 +10,14 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "snd_five_beep.wav",
-  "duration": 0.941708,
+  "soundFile": "snd_dash2.wav",
+  "duration": 0.505,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",
   },
   "resourceVersion": "1.0",
-  "name": "snd_five_beep",
+  "name": "snd_dash2",
   "tags": [],
   "resourceType": "GMSound",
 }

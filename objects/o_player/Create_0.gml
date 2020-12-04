@@ -6,6 +6,7 @@ collision_map = layer_tilemap_get_id (layer_get_id("Col"));
 // Properties
 hp_max = 100;
 hp = hp_max;
+no_damage_taken = true;
 
 // Movement
 normal_spd = 4;
@@ -20,7 +21,7 @@ dash_duration = 4;
 dash_distance = 6;
 is_dashing = false;
 dash_angle = 0;
-dash_cooldown = 35;
+dash_cooldown = 25;
 current_dash_cooldown = 0;
 
 // Attack

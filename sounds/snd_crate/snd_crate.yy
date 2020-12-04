@@ -1,6 +1,6 @@
 {
   "compression": 0,
-  "volume": 0.26,
+  "volume": 0.23,
   "preload": false,
   "bitRate": 128,
   "sampleRate": 44100,
@@ -10,14 +10,14 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "snd_beep.wav",
-  "duration": 0.345932,
+  "soundFile": "snd_crate.wav",
+  "duration": 0.440692,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",
   },
   "resourceVersion": "1.0",
-  "name": "snd_beep",
+  "name": "snd_crate",
   "tags": [],
   "resourceType": "GMSound",
 }

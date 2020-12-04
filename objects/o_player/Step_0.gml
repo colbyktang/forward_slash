@@ -11,7 +11,13 @@ dash_timer--;
 
 input_magnitude = global.h_input != 0 || global.v_input != 0;
 if (input_magnitude > 0) {
+	image_speed = 1;
+	sprite_index = spr_character_running;
 	input_direction = point_direction(0,0,global.h_input, global.v_input);
+}
+else {
+	image_speed = 0.4;
+	sprite_index = spr_character;	
 }
 
 if (!is_dashing) {
@@ -35,6 +41,7 @@ if (dash_input and current_dash_cooldown <= 0) {
 	alarm[0] = dash_duration; // duration of dash
 	current_dash_cooldown = dash_cooldown;
 	audio_play_sound(snd_dash, 25, false);
+	audio_play_sound(snd_dash2, 30, false);
 }
 
 is_colliding = PlayerCollision();
@@ -97,6 +104,8 @@ if (hp <= 0) {
 	instance_destroy(self);
 	instance_create_layer(x,y, "Instances", o_player_body);
 	with (o_game) event_user(1);
+	effect_create_above(ef_explosion, x, y, 1, c_aqua);
+	audio_play_sound(snd_player_death, 60, false);
 }
 
 if (flash_alpha > 0) {

@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "s_swing",
-    "path": "sprites/s_swing/s_swing.yy",
+    "name": "spr_direction",
+    "path": "sprites/spr_direction/spr_direction.yy",
   },
   "solid": false,
   "visible": true,

@@ -29,9 +29,9 @@ if (warp_progress >= warp_goal) {
 	audio_sound_pitch(snd_warp, 1.5);
 	audio_play_sound(snd_warp, 50, false);
 	
-	// Achievement 1
+	// Achievement 0
 	if (room == level_1) {
-		if (instance_exists(o_achievements)) {
+		if (instance_exists(o_achievements) and !o_achievements.achievement_lvl1) {
 			o_achievements.achievement_lvl1 = true;
 			with (o_achievements) {
 				event_user(0);	
@@ -41,13 +41,37 @@ if (warp_progress >= warp_goal) {
 	
 	// Achievement 2
 	if (room == level_2) {
-		if (instance_exists(o_achievements)) {
+		if (instance_exists(o_achievements) and !o_achievements.achievement_lvl2) {
 			o_achievements.achievement_lvl2 = true;
 			with (o_achievements) {
 				event_user(2);	
 			}
 		}
 	}
+	
+	// Achievement 4
+	if (room != tutorial and instance_exists(o_player)) {
+		if (o_player.no_damage_taken) {
+			if (instance_exists(o_achievements) and !o_achievements.achievement_nodmg) {
+				o_achievements.achievement_nodmg = true;
+				with (o_achievements) {
+					event_user(4);
+				}
+			}
+		}
+	}
+	
+	// Achievement 5
+	if (room != tutorial and instance_exists(o_game) and global.kills == 0) {
+		if (instance_exists(o_achievements) and !o_achievements.achievement_notoro) {
+			o_achievements.achievement_notoro = true;
+			with (o_achievements) {
+				event_user(5);	
+			}
+		}
+	}
+	
+
 	
 	if (room != room_last) {
 		room_goto_next();
